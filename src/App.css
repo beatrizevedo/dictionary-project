@@ -2,9 +2,8 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App p {
+  font-size: 12px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
