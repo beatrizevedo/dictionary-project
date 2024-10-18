@@ -5,9 +5,17 @@ import './Dictionary.css';
 export default function Dictionary() {
   let [word, setWord] = useState('');
   let [answer, setAnswer] = useState('');
+  let [phonetic, setPhonetic] = useState('');
+  let [type, setType] = useState('');
+  let [example, setExample] = useState('');
+  let [synonyms, setSynonyms] = useState('');
 
   function handleResponse(response) {
     setAnswer(response.data.meanings[0].definition);
+    setPhonetic(response.data.phonetic);
+    setType(response.data.meanings[0].partOfSpeech);
+    setExample(response.data.meanings[0].example);
+    setSynonyms(response.data.meanings[0].synonyms);
   }
 
   function search(event) {
@@ -32,9 +40,14 @@ export default function Dictionary() {
         />
         <input type="submit" value="Search" className="submit-button" />
       </form>
-      <h2>{word}</h2>
+
       <div className="Definition">
+        <h2>{word}</h2>
+        <p>{phonetic}</p>
+        <p>{type}</p>
         <p>{answer}</p>
+        <p>{synonyms}</p>
+        <p>{example}</p>
       </div>
     </div>
   );
