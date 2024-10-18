@@ -31,23 +31,24 @@ export default function Dictionary() {
 
   return (
     <div className="Dictionary">
-      <h1>Dictionary</h1>
+      <h1>● Dictionary ● ●</h1>
       <form className="SearchForm" onSubmit={search}>
         <input
           type="search"
-          placeholder="Tell me the meaning of"
+          placeholder="Write your unknown word here"
           onChange={handleWordChange}
+          className="SearchBox"
         />
-        <input type="submit" value="Search" className="submit-button" />
+        <input type="submit" value="Search 🔍" className="SubmitButton" />
+        <small>Search for only 1 word in English</small>
       </form>
 
       <div className="Definition">
-        <h2>{word}</h2>
-        <p>{phonetic}</p>
-        <p>{type}</p>
-        <p>{answer}</p>
-        <p>{synonyms}</p>
-        <p>{example}</p>
+        <h2 className="Word"> ● {word} ● ●</h2>
+        <p className="Phonetic">{phonetic}</p>
+        <p className="Type">{type}</p>
+        <p className="Answer">{answer}</p>
+        <p className="Example">{example}</p>
       </div>
     </div>
   );

@@ -8,9 +8,9 @@ function App() {
         <Dictionary />
       </main>
       <footer>
-        <p>
-          This dictionary was created by Beatriz. It's open sourced on Github
-          and hosted on Netlify
+        <p className="author">
+          This dictionary was created by Beatriz Azevedo. It's open sourced on
+          Github and hosted on Netlify
         </p>
       </footer>
     </div>
