@@ -8,14 +8,12 @@ export default function Dictionary() {
   let [phonetic, setPhonetic] = useState('');
   let [type, setType] = useState('');
   let [example, setExample] = useState('');
-  let [synonyms, setSynonyms] = useState('');
 
   function handleResponse(response) {
     setAnswer(response.data.meanings[0].definition);
     setPhonetic(response.data.phonetic);
     setType(response.data.meanings[0].partOfSpeech);
     setExample(response.data.meanings[0].example);
-    setSynonyms(response.data.meanings[0].synonyms);
   }
 
   function search(event) {
@@ -35,7 +33,7 @@ export default function Dictionary() {
       <form className="SearchForm" onSubmit={search}>
         <input
           type="search"
-          placeholder="Write your unknown word here"
+          placeholder="Type your unknown word here"
           onChange={handleWordChange}
           className="SearchBox"
         />
