@@ -5,20 +5,24 @@
 }
 .Dictionary h1 {
   font-weight: 600;
-  margin-top: 100px;
+  padding-top: 100px;
+  margin-top: 0px;
+  padding-bottom: 30px;
   font-size: 50px;
   color: var(--text-color);
+  text-shadow: var(--back-color) 1px 0 5px;
 }
 .Dictionary form {
   background-color: var(--back-color);
-  opacity: 85%;
+  opacity: 80%;
   border-radius: 30px;
   padding: 20px 50px 20px 50px;
-  margin-left: 510px;
-  margin-right: 510px;
+  align-self: center;
+  margin-left: 250px;
+  margin-right: 250px;
 }
 .Dictionary .SearchBox {
-  width: 400px;
+  width: 300px;
   border: none;
   background-color: var(--back-color);
   font-size: 20px;
@@ -34,7 +38,7 @@
   border: none;
   padding: 10px 10px 10px 10px;
   color: var(--back-color);
-  margin-left: 30px;
+  margin-left: 150px;
 }
 
 .Dictionary h2 {
@@ -45,32 +49,39 @@
 }
 .Dictionary .Definition {
   background-color: var(--back-color);
-  opacity: 85%;
+  opacity: 80%;
   border-radius: 30px;
   padding: 20px 50px 20px 50px;
-  margin-left: 510px;
-  margin-right: 510px;
+  align-self: center;
   margin-top: 30px;
-  text-align: left;
+  text-align: center;
+  margin-left: 250px;
+  margin-right: 250px;
 }
 
 .Dictionary .Type {
   color: var(--secondary-color);
   font-weight: 500;
   font-size: 20px;
-  text-align: left;
+  text-align: center;
   margin-top: 30px;
 }
 .Dictionary .Answer {
   font-size: 20px;
   line-height: 1.5;
 }
+.Dictionary .Author {
+  font-size: 13px;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  text-shadow: var(--back-color) 1px 0 5px;
+}
 
 .Dictionary .Phonetic {
   color: var(--secondary-color);
   font-style: italic;
   font-size: 25px;
-  text-align: left;
+  text-align: center;
   margin-top: 0px;
 }
 .Dictionary .Example {
@@ -79,6 +90,7 @@
   margin-top: 50px;
   color: var(--secondary-color);
 }
-.Dictionary small {
+.Dictionary .instructions {
   color: var(--secondary-color);
+  margin-top: 15px;
 }
